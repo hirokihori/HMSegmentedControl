@@ -166,6 +166,13 @@ typedef enum {
 @property (nonatomic, assign) CGFloat borderWidth;
 
 /**
+ Specifies the animation duration
+ 
+ Default is `0.15f`
+ */
+@property (nonatomic, assign) CGFloat animationDuration;
+
+/**
  Default is YES. Set to NO to deny scrolling by dragging the scrollView by the user.
  */
 @property(nonatomic, getter = isUserDraggable) BOOL userDraggable;

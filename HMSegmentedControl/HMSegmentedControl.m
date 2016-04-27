@@ -149,6 +149,7 @@
     _verticalDividerColor = [UIColor blackColor];
     self.borderColor = [UIColor blackColor];
     self.borderWidth = 1.0f;
+    self.animationDuration = 0.15f;
     
     self.shouldAnimateUserSelection = YES;
     
@@ -824,7 +825,7 @@
             
             // Animate to new position
             [CATransaction begin];
-            [CATransaction setAnimationDuration:0.15f];
+            [CATransaction setAnimationDuration:self.animationDuration];
             [CATransaction setAnimationTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear]];
             [self setArrowFrame];
             self.selectionIndicatorBoxLayer.frame = [self frameForSelectionIndicator];
